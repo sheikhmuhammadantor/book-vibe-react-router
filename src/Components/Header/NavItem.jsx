@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const NavItem = () => {
 
-    const baseStyle = "border text-base font-semibold";
+    const baseStyle = "border font-semibold focus:text-primary focus:bg-transparent";
 
     return (
         <>
