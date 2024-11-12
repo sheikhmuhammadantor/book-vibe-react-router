@@ -6,16 +6,18 @@ function BookDetails() {
 
     const { bookId } = useParams()
 
-    const [...books] = useContext(BooksDataContext)
+    const books = useContext(BooksDataContext)
 
-    const detailsBook = (bookId) => {
-        
-    }
+    const book = books.find(book => book.bookId === parseInt(bookId))
+
+// console.log(parseInt(bookId));
+// console.log("books",books);
+// console.log("book",book.bookId);
 
 
     return (
         <div>
-            <h1>BookDetails {bookId}</h1>
+            {/* <h1>BookDetails {book.bookId}</h1> */}
         </div>
     )
 }

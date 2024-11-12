@@ -6,8 +6,7 @@ import { BooksDataContext } from "../../App"
 
 const Books = () => {
 
-  const [...books] = useContext(BooksDataContext)
-  console.log(books)
+  const books = useContext(BooksDataContext)
 
   return (
     <div className="w-full my-12">
